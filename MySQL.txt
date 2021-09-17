@@ -1,0 +1,32 @@
+# phpMyAdmin MySQL-Dump
+# version 2.2.6
+# http://phpwizard.net/phpMyAdmin/
+# http://www.phpmyadmin.net/ (download page)
+#
+# Serveur: localhost
+# Généré le : Mercredi 04 Mai 2005 à 22:39
+# Version du serveur: 3.23.49
+# Version de PHP: 4.2.0
+# Base de données: `livre`
+# --------------------------------------------------------
+
+#
+# Structure de la table `livres`
+#
+
+CREATE TABLE livres (
+  Id int(11) NOT NULL auto_increment,
+  titre varchar(100) NOT NULL default '',
+  Auteur varchar(100) NOT NULL default '',
+  date year(4) NOT NULL default '0000',
+  commentaire varchar(255) NOT NULL default '',
+  PRIMARY KEY  (Id),
+  FULLTEXT KEY titre (titre),
+  FULLTEXT KEY commentaire (commentaire)
+) TYPE=MyISAM;
+
+#
+# Contenu de la table `livres`
+#
+
+INSERT INTO livres VALUES (1, 'A l\'ouest rien de nouveau', 'E.M. Remarque', '1945', 'Très bon bouquin');
