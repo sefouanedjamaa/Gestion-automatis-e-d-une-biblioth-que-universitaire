@@ -1,0 +1,36 @@
+.exemple-pattern-css span{
+
+
+display: block
+
+}
+
+.exemple-pattern-css input{
+
+padding: .5rem;
+border: 1px solid #bfbfbf;
+width: 300px
+}
+
+.exemple-pattern-css input ~ span:after { 
+
+content: attr(title); 
+color: red; 
+margin-left: .6rem; 
+opacity: 0; 
+visibility: hidden;
+transition: 1s 1s opacity linear
+
+}
+.exemple-pattern-css input:invalid ~ span:after {
+
+visibility: visible;
+opacity: 1
+
+}
+
+.exemple-pattern-css{
+
+border: none
+
+} 

@@ -1,0 +1,39 @@
+<html>
+<body   style="background-color: green; padding: 0px; margin: 0px;">
+
+
+<center>
+<form action="emprunt.php" method="post">
+<div  style=" background-color: white; margin-left: 10%;margin-right: 10%;border: 2 solid white; margin-top: 3%;
+             border-radius: 4px;  margin-bottom:25%; height:90%;">
+                           <img alt="" src="logo.png" style=" height: 100px; width: 100px; border-radius: 50ex; margin-left: 3%;margin-top: 5ex;">
+
+<h3>Pr&eacute;ter un document : </h3><br>
+
+R&eacute;f&eacute;rence :<input  style="width: 35%; height: 27px;"   type="number" name="refexmp" required title="entre des nums seulement" placeholder="8745" > <span style="color: red;"></span><br><br>
+
+Matricule :<input  style="width: 35%; height: 27px;"  type="number" name= "matricule" placeholder="9687" required="entre des nums seulement"  title="entre des numero seulement"> <span style="color: red;"></span> <br> <br>
+Date_sortie:<input style="width: 35%; height: 27px;"  type="text" name="date_sortie"  placeholder="AAAA/MM/JJ" required pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:[1-9}|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?;30))|(?:(?:[13578]|1[02]-31))"  > <br><br>
+
+
+Date_rendu :<input  style="width: 35%; height: 27px;"  type="text" name= "date_rendu" required placeholder="AAAA/MM/JJ" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:[1-9}|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?;30))|(?:(?:[13578]|1[02]-31))" > <span style="color: red;"></span> <br><br>
+
+
+
+
+
+
+  <br><br><input type= "reset" value= "Annuler"  style=" border-radius:2px; margin-left: 10px;border: none;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.1); size: 50px;  background-color:green; color: white;text-align: center; height: 42px;width: 12%;"/>
+<input type="submit" value="Pr&eacute;ter" style=" border-radius:2px; margin-left: 10px;border: none;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.1); size: 50px;  background-color:green; color: white;text-align: center; height: 42px;width: 12%;"/>
+
+
+    <br><br><a href="aceuil.html"><img src=RETOUR.png width="50" height="50"> </a>
+
+ </div>
+</form>
+</center>
+
+</body>
+</html>

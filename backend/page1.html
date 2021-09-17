@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="subnav">
+   
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Acces au Services <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="login.php">Bibliothequere </a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Cantact et Remarque <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Contacte nous</a>
+      <a href="#link2">Enquete Et Remarque</a>
+
+    </div>
+  </div>
+
+</div>
+
+<div style="padding:0 16px">
+  <h3>Une bibliotheque, c est le carrefour de tous les reves de l humanite  </h3>
+  <p>Pour facilete la vie de l etre humain et d autre cote maitre en main l utilisation des outils informatique</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<body  style="background-color: green; padding: 0px; margin: 0px;">
+
+
+<center>
+<form action= "supexp.php" method="post">
+<div  style=" background-color: white; margin-left: 10%;margin-right: 10%;border: 2 solid white; margin-top: 3%;
+             border-radius: 4px;  margin-bottom:25%; height:90%;">
+                           <img alt="" src="logo.png" style=" height: 100px; width: 100px; border-radius: 50ex; margin-left: 3%;margin-top: 5ex;">
+
+<h3>Supprimer un exemplaire : </h3><br>
+
+R&eacute;f&eacute;rence de l'exemplaire  :<input   style="width: 35%; height: 27px;" type="number" placeholder="145" name="refexmp" required > <br>
+
+ <br><br><br><input type= "reset" value= "Annuler" style=" border-radius:2px; margin-left: 10px;border: none;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.1); size: 50px;  background-color:green; color: white;text-align: center; height: 42px;width: 12%;"/>
+
+ <button onclick="myFunction()"  style=" border-radius:2px; margin-left: 10px;border: none;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.1); size: 50px;  background-color:green; color: white;text-align: center; height: 42px;width: 12%;">Supprimer</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var r = confirm("Vous avez cliqué sur supprimer!\n pour confirmer votre demande veuillez choisir OK.\n Sinon cliquez sur Cancel .");
+  if (r == true) {
+    txt = "ok ";
+  } else {
+    txt = "Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+      <br><br><a href="aceuil.html"><img src=RETOUR.png width="50" height="50"> </a>
+ </div>
+</form>
+</center>
+
+
+
+</body>
+</html>
